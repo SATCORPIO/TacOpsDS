@@ -1,4 +1,3 @@
-// components/dashboard/StatPanel.tsx
 "use client";
 
 import { useEffect, useState } from "react";
