@@ -1,7 +1,6 @@
-// package.json
 {
-  "name": "satcorp-command-dashboard",
-  "version": "0.1.0",
+  "name": "TacOpsDS",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
