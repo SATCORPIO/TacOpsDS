@@ -6,8 +6,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { mockActivities } from "@/lib/mockData";
 import { slideIn } from "@/lib/animations";
 
+interface Activity {
+  id: number;
+  timestamp: string;
+  message: string;
+  type: 'alert' | 'info';
+}
+
 export function ActivityFeed() {
-  const [activities, setActivities] = useState(mockActivities);
+  const [activities, setActivities] = useState<Activity[]>(mockActivities);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -15,7 +22,7 @@ export function ActivityFeed() {
         id: Date.now(),
         timestamp: new Date().toISOString(),
         message: `INTEL UPDATE: Sector ${Math.floor(Math.random() * 9) + 1} - ${Math.random() > 0.5 ? 'ANOMALY DETECTED' : 'ROUTINE SCAN'}`,
-        type: Math.random() > 0.7 ? 'alert' : 'info'
+        type: Math.random() > 0.7 ? 'alert' : 'info' as 'alert' | 'info'
       };
       
       setActivities(prev => [newActivity, ...prev.slice(0, 9)]);
