@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         mono: ['JetBrains Mono', 'monospace'],
         serif: ['Crimson Pro', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },
   },
