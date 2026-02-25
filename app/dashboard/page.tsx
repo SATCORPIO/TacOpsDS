@@ -1,4 +1,3 @@
-// app/dashboard/page.tsx
 import { CommandHeader } from "@/components/dashboard/CommandHeader";
 import { StatPanel } from "@/components/dashboard/StatPanel";
 import { ActivityFeed } from "@/components/dashboard/ActivityFeed";
