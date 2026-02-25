@@ -1,12 +1,14 @@
+// package.json (updated with Vercel deployment scripts)
 {
-  "name": "TacOpsDS",
+    "name": "TacOpsDS",
   "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "next build"
   },
   "dependencies": {
     "framer-motion": "^10.16.16",
