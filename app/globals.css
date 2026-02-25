@@ -14,13 +14,17 @@
     --secondary: #6B7280;
   }
 
-  body {
-    @apply bg-background text-primary antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+  * {
+    @apply border-gold/20;
   }
 
-  .font-serif {
-    font-family: 'Crimson Pro', Georgia, serif;
+  body {
+    @apply bg-background text-primary antialiased;
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    @apply bg-gold/20 text-primary;
   }
 }
 
