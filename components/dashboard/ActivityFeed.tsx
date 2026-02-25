@@ -1,4 +1,3 @@
-// components/dashboard/ActivityFeed.tsx
 "use client";
 
 import { useEffect, useState } from "react";
