@@ -1,4 +1,3 @@
-// components/dashboard/ThreatMonitor.tsx
 "use client";
 
 import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
