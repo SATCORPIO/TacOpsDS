@@ -19,11 +19,7 @@
 
   body {
     @apply bg-background text-primary antialiased;
-    font-family: var(--font-sans);
-  }
-
-  ::selection {
-    @apply bg-gold/20 text-primary;
+    font-family: var(--font-sans), system-ui, sans-serif;
   }
 }
 
