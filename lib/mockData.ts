@@ -1,4 +1,3 @@
-// lib/mockData.ts
 export const mockStats = {
   activeOps: 47,
   assetsDeployed: 128,
