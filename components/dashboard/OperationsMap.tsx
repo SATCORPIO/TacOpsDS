@@ -4,8 +4,14 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+interface Ping {
+  id: number;
+  x: number;
+  y: number;
+}
+
 export function OperationsMap() {
-  const [pings, setPings] = useState<{ id: number; x: number; y: number }[]>([]);
+  const [pings, setPings] = useState<Ping[]>([]);
 
   useEffect(() => {
     const interval = setInterval(() => {
