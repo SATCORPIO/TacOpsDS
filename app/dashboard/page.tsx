@@ -1,10 +1,11 @@
-import { CommandHeader } from "@/components/dashboard/CommandHeader";
-import { StatPanel } from "@/components/dashboard/StatPanel";
-import { ActivityFeed } from "@/components/dashboard/ActivityFeed";
-import { ThreatMonitor } from "@/components/dashboard/ThreatMonitor";
-import { IntelligenceChart } from "@/components/dashboard/IntelligenceChart";
-import { OperationsMap } from "@/components/dashboard/OperationsMap";
-import { mockStats, mockThreatData } from "@/lib/mockData";
+import React from 'react'
+import { CommandHeader } from "@/components/dashboard/CommandHeader"
+import { StatPanel } from "@/components/dashboard/StatPanel"
+import { ActivityFeed } from "@/components/dashboard/ActivityFeed"
+import { ThreatMonitor } from "@/components/dashboard/ThreatMonitor"
+import { IntelligenceChart } from "@/components/dashboard/IntelligenceChart"
+import { OperationsMap } from "@/components/dashboard/OperationsMap"
+import { mockStats, mockThreatData } from "@/lib/mockData"
 
 export default function DashboardPage() {
   return (
@@ -75,5 +76,5 @@ export default function DashboardPage() {
         </div>
       </div>
     </main>
-  );
+  )
 }
