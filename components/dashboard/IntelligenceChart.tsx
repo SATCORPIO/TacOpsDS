@@ -4,8 +4,13 @@
 import { useEffect, useState } from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts";
 
+interface DataPoint {
+  time: number;
+  value: number;
+}
+
 export function IntelligenceChart() {
-  const [data, setData] = useState(
+  const [data, setData] = useState<DataPoint[]>(
     Array.from({ length: 20 }, (_, i) => ({
       time: i,
       value: Math.floor(Math.random() * 100) + 50
