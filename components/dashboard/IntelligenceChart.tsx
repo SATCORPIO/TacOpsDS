@@ -1,4 +1,3 @@
-// components/dashboard/IntelligenceChart.tsx
 "use client";
 
 import { useEffect, useState } from "react";
